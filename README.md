@@ -67,7 +67,7 @@ sequenceDiagram
 | `backend/server.py` | Flask 서버, 모델 정의(`AttentionAudioClassifier`: MLP + SE 블록), 추론, DB 저장 |
 | `backend/best_asvspoof_model_cuda.pt`, `scaler_asvspoof.pkl` | 서버가 읽는 가중치(약 1.8 MB)와 MFCC 스케일러 |
 | `backend/manage_db.py`, `upload_json.py` | DB 관리, 더미 데이터 생성, JSON 번호 목록 업로드 스크립트 |
-| `backend/data.json`, `phone_cursor.txt`, `deepfake.db` | 번호 목록, 배정 위치, 저장된 결과 DB |
+| `backend/data.json`, `phone_cursor.txt`, `deepfake.db` | 번호 목록, 배정 위치, 저장된 결과 DB (전화번호는 모두 시연용 가짜 값) |
 | `MainActivity/` | Android 앱 (Kotlin, Compose, Retrofit/OkHttp, minSdk 24, targetSdk 34) |
 | `MyApplication/` | Android Studio 기본 템플릿 프로젝트 (사용되지 않는 것으로 보임) |
 
